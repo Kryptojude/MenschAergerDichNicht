@@ -333,8 +333,8 @@ namespace BrettspielEngine
         {
             emptyRolls = 0; //Reset the emptyRolls
 
-            if (currentPlayer.number == 0)
-                currentPlayer = players[2];
+            if (currentPlayer.number != 3)
+                currentPlayer = players[currentPlayer.number + 1];
             else
                 currentPlayer = players[0];
 
